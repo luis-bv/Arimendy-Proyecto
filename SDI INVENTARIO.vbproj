@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AA444C1-2F7E-496E-80FE-E39712C3FF67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication2.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication2</RootNamespace>
+    <AssemblyName>proyector</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>proyector.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>proyector.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>inventory_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Articulos.Designer.vb">
+      <DependentUpon>Articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmagrevararcticulos.Designer.vb">
+      <DependentUpon>Frmagrevararcticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmagrevararcticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmControldeusuario.Designer.vb">
+      <DependentUpon>FrmControldeusuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmControldeusuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmentradad.Designer.vb">
+      <DependentUpon>frmentradad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmentradad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frminicio.Designer.vb">
+      <DependentUpon>Frminicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frminicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmregritodeproveedor.Designer.vb">
+      <DependentUpon>frmregritodeproveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmregritodeproveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informe.controldeusuario.Designer.vb">
+      <DependentUpon>informe.controldeusuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="informe.controldeusuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informedearcticulo.Designer.vb">
+      <DependentUpon>informedearcticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="informedearcticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informedeentradad.Designer.vb">
+      <DependentUpon>Informedeentradad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informedeentradad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informedeproveedores.Designer.vb">
+      <DependentUpon>Informedeproveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informedeproveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicioDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inicioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inicioDataSet.vb">
+      <DependentUpon>inicioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inicioDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inicioDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inicioDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inicioDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="Module2.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Articulos.resx">
+      <DependentUpon>Articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmagrevararcticulos.resx">
+      <DependentUpon>Frmagrevararcticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmControldeusuario.resx">
+      <DependentUpon>FrmControldeusuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmentradad.resx">
+      <DependentUpon>frmentradad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frminicio.resx">
+      <DependentUpon>Frminicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmregritodeproveedor.resx">
+      <DependentUpon>frmregritodeproveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informe.controldeusuario.resx">
+      <DependentUpon>informe.controldeusuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informedearcticulo.resx">
+      <DependentUpon>informedearcticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informedeentradad.resx">
+      <DependentUpon>Informedeentradad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informedeproveedores.resx">
+      <DependentUpon>Informedeproveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportdenetradad.rdlc" />
+    <EmbeddedResource Include="Reportdeproveedor.rdlc" />
+    <EmbeddedResource Include="reportedeusuario.rdlc" />
+    <EmbeddedResource Include="reportedeArticulos.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inicioDataSet.xsc">
+      <DependentUpon>inicioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="inicioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inicioDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inicioDataSet.xss">
+      <DependentUpon>inicioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="inicioDataSet1.xsc">
+      <DependentUpon>inicioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="inicioDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inicioDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inicioDataSet1.xss">
+      <DependentUpon>inicioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="inicioDataSet2.xsc">
+      <DependentUpon>inicioDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="inicioDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inicioDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inicioDataSet2.xss">
+      <DependentUpon>inicioDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20180614-WA0030.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_ver-perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="inventory_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
